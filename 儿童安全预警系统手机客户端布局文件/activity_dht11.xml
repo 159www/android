@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="环境温湿度"
+        android:textSize="40px"
+        android:background="#FF24ADF3"
+        android:textColor="@color/black"
+        android:gravity="center_vertical">
+
+    </TextView>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="600px" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:text="数值显示"
+            android:textColor="#FF23A9F2">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="360px"
+                android:layout_height="140px"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="温度：27℃"
+                android:textColor="#FF990D06"
+                android:id="@+id/dht11_activity_temperture_value_text_view">
+
+            </TextView>
+            <TextView
+                android:layout_width="360px"
+                android:layout_height="140px"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="湿度：54%"
+                android:textColor="#FF022EB9"
+                android:id="@+id/dht11_activity_humidity_value_text_view">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:text="阈值设置"
+            android:textColor="#FF23A9F2">
+        </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center"
+            android:text="温度">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center_vertical"
+                android:id="@+id/dht11_activity_temperture_high_text_view"
+                android:text="上限：">
+            </TextView>
+            <SeekBar
+                android:layout_width="400px"
+                android:layout_height="100px"
+                android:id="@+id/dht11_activity_temperture_high_seekbar">
+            </SeekBar>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center_vertical"
+                android:id="@+id/dht11_activity_temperture_low_text_view"
+                android:text="下限：">
+            </TextView>
+            <SeekBar
+                android:layout_width="400px"
+                android:layout_height="100px"
+                android:id="@+id/dht11_activity_temperture_low_seekbar">
+            </SeekBar>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:gravity="center"
+                android:text="湿度">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="100px"
+                    android:gravity="center_vertical"
+                    android:id="@+id/dht11_activity_humidity_high_text_view"
+                    android:text="上限：">
+                </TextView>
+                <SeekBar
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:id="@+id/dht11_activity_humidity_high_seekbar">
+                </SeekBar>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200px"
+                    android:layout_height="100px"
+                    android:gravity="center_vertical"
+                    android:id="@+id/dht11_activity_humidity_low_text_view"
+                    android:text="下限：">
+                </TextView>
+                <SeekBar
+                    android:layout_width="400px"
+                    android:layout_height="100px"
+                    android:id="@+id/dht11_activity_humidity_low_seekbar">
+                </SeekBar>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

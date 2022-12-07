@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#FF25AEF3"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:text="定位与导航"
+        android:textSize="40px">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_horizontal"
+            android:background="#FFFF6E9E"
+            android:text="本机位置">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="@drawable/pdding"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="370px"
+                android:layout_height="200px"
+                android:text="经度："
+                android:id="@+id/gps_activity_source_longitude_text_view"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="370px"
+                android:layout_height="200px"
+                android:text="纬度："
+                android:id="@+id/gps_activity_source_latitude_text_view"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center_horizontal"
+        android:background="#FFFF6E9E"
+        android:text="目标位置">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/pdding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="370px"
+            android:layout_height="200px"
+            android:text="经度："
+            android:id="@+id/gps_activity_destination_longitude_text_view"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="370px"
+            android:layout_height="200px"
+            android:text="纬度："
+            android:id="@+id/gas_activity_destination_latitude_text_view"
+            android:gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center_horizontal"
+        android:text="当前直线距离"
+        android:background="#FFFF6E9E">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/pdding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:id="@+id/gps_activity_distance_text_view"
+            android:gravity="center"
+            android:text="100m"
+            >
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center_horizontal"
+        android:text="最远距离设定"
+        android:background="#FFFF6E9E">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@drawable/pdding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:text="距离阈值："
+            android:gravity="center">
+        </TextView>
+        <EditText
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:id="@+id/gps_activity_distance_limitation_edit"
+            android:text="100">
+        </EditText>
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="200px"
+            android:gravity="center_vertical"
+            android:text="公里">
+
+        </TextView>
+        <Button
+            android:layout_width="220px"
+            android:layout_height="200px"
+            android:background="#FF24ADF3"
+            android:id="@+id/gps_activity_distance_limitation_set_button"
+            android:text="设置">
+
+        </Button>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+    </TextView>
+    <Button
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:text="开始导航"
+        android:background="#FF24ADF3"
+        android:id="@+id/gps_activity_start_navigation_button">
+
+    </Button>
+
+
+</LinearLayout>

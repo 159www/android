@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:text="电量监测"
+        android:background="#FF25AFF3"
+        android:layout_marginBottom="300px">
+    </TextView>
+    <com.example.ok.Dashboard
+        android:id="@+id/battery_activity_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text_title_dial="电量"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:background="#FF25AFF3"
+        android:text="低电量预警">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100px"
+            android:text="20%"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:id="@+id/battery_activity_low_limitation"
+            android:layout_height="150px">
+        </TextView>
+        <SeekBar
+            android:layout_width="500px"
+            android:layout_height="150px"
+            android:layout_marginLeft="10px"
+            android:id="@+id/battery_activity_low_seekbar">
+        </SeekBar>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center_vertical"
+        android:text="取值范围建议：1~20">
+
+    </TextView>
+    <Button
+        android:layout_width="400px"
+        android:text="返回"
+        android:layout_marginTop="100px"
+        android:background="#FF25AFF3"
+        android:layout_height="100px">
+
+    </Button>
+
+</LinearLayout>

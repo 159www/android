@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="摔倒监测"
+        android:gravity="center_vertical"
+        android:textSize="40px"
+        android:background="#FF24ACF2"
+        android:layout_height="100px">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="200px"
+        android:layout_height="100px"
+        android:background="#FFFE296B"
+        android:gravity="center"
+        android:text="合加速度">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mpu6050_activity_accleration_text_view"
+        android:layout_height="100px">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#FFFE296B"
+        android:gravity="center"
+        android:text="合角加速度">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mpu6050_activity_angular_text_view"
+        android:layout_height="100px">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#FFFE296B"
+        android:gravity="center"
+        android:text="摔倒次数">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mpu6050_activity_times_textview"
+        android:layout_height="100px">
+    </TextView>
+
+
+</LinearLayout>

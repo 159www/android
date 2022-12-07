@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/register1"
+        android:scaleType="fitXY"
+        android:id="@+id/image"
+
+        >
+    </ImageView>
+
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:hint="请输入账号"
+        android:textColorHighlight="@color/white"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:id="@+id/account_edit"
+        android:drawableLeft="@drawable/register3"
+        >
+    </EditText>
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:hint="请输入账号密码"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="200px"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:id="@+id/pass_edit"
+        android:drawableLeft="@drawable/register4"
+        >
+    </EditText>
+    <Button
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:background="#FF0078B9"
+        android:text="登录"
+        android:textSize="50px"
+        android:layout_marginBottom="80px"
+        android:id="@+id/login_button"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:text="注册"
+        android:textSize="50px"
+        android:background="#FF0078B9"
+        android:id="@+id/go_register_button"
+        >
+
+    </Button>
+
+
+</LinearLayout>
+

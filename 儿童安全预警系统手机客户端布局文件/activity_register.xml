@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register2"
+    android:gravity="center_horizontal"
+    >
+    <LinearLayout
+        android:layout_width="800px"
+        android:layout_height="700px"
+        android:layout_marginTop="320px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_marginBottom="100dp"
+        >
+        <TextView
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:textColor="#FFFD0000"
+            android:gravity="center_horizontal"
+            android:id="@+id/register_notification_textview"
+            >
+
+        </TextView>
+
+        <EditText
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:hint="请设置账号"
+            android:drawableLeft="@drawable/register3"
+            android:id="@+id/register_account_edit"
+            android:gravity="center_horizontal"
+            android:textColorHint="@color/black">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:textColorHint="@color/black"
+            android:drawableLeft="@drawable/register4"
+            android:hint="请设置账号密码"
+            android:id="@+id/register_pass_edit"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            >
+        </EditText>
+        <EditText
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:hint="请再次输入密码"
+            android:layout_marginBottom="50px"
+            android:textColorHint="@color/black"
+            android:id="@+id/register_pass_verify_edit"
+            android:drawableLeft="@drawable/register4"
+            android:gravity="center_horizontal"
+            android:inputType="textPassword"
+            >
+        </EditText>
+
+        <Button
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:layout_marginBottom="20px"
+            android:background="#FF22A7F2"
+            android:id="@+id/register_button"
+            android:text="注册"
+            >
+        </Button>
+        <Button
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:background="#FF22A7F2"
+            android:id="@+id/go_mainactivity"
+            android:text="返回"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+</RelativeLayout>
